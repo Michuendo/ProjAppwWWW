@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/jquery.css" />
+    <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../java/jquery.js"></script>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Michał Janicki">
+    <title>Popularne Polskie Gry</title>
+</head>
+<body>
+
+   <div id = "header">
+    <a href ="../index.php"> 
+        <img src="../image/logo.png" class="logo">
+        <h1 class="title">Popularne Polskie Gry</h1>
+    </a>
+      <a href="listy.html">  <div class="list">
+           LISTA WSZYSTKICH POLSKICH GIER
+           </div></a>
+    <a href="premiery.html">  <div class="list">
+           PREMIERY 2023r
+            </div></a>
+    <a href="worldGames.html">  <div class="list">
+            NAJLEPSZE GRY NA ŚWIECIE
+            </div></a>
+      <a href="kontakt.html"> <div class="list">
+            KONTAKT
+           </div></a>
+           <a href="login.html"> <div class="login">
+            Zaloguj się
+        </div></a>
+
+   </div>
+   <div id = "main">
+    <div class="mids">
+      <div id="animacjaTestowa1" class="test-block">Kliknij, a sie powiększe</div>
+      <div id="animacjaTestowa2" class="test-block">Najedź Kursorem, a się powiększe</div>
+      <div id="animacjaTestowa3" class="test-block">Kliknij, abym urósł</div>
+   <script>
+$("#animacjaTestowa1").on("click", function(){
+    $(this).animate({
+    width: "500px",
+    opacity: 0.4, 
+    fontsize: "3em",
+    borderwidth: "10px"
+    },1500);
+    });
+
+$("#animacjaTestowa2").on({
+    "mouseover" : function(){
+        $(this).animate({
+            width:300
+        },800);
+    },
+    "mouseout" : function(){
+        $(this).animate({
+            width:200
+        },800);
+    }
+});
+$("#animacjaTestowa3").on("click",function(){
+    if(!$(this).is(":animated")){
+        $(this).animate({
+            width: "+=" +50,
+            height:"+="+ 10,
+            opacity: "-=" +0.1,
+            duration : 3000
+        });
+    }
+});
+   </script>
+      </div>
+   </div>
+   <div id = "foot">
+    <a href="mailto:testowyemail@test.pl" class = "fo">email: testowyemail@test.pl</a>
+   </div>
+</body>
+</html>
