@@ -1,0 +1,58 @@
+.login{
+    background-color: rgba(79, 59, 59, 0.483);
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    width:80px;
+    height: 30px;
+    padding-top: 9px;
+    float:right;
+    margin-right: 20px;
+    border-radius: 30px;
+    margin-top:30px;
+    -webkit-box-shadow: 0px 0px 30px -13px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 30px -13px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 30px -13px rgba(66, 68, 90, 1);
+   
+}
+.login:hover{
+    background-color: rgb(38, 248, 220);
+    color:rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.mids{
+    height: auto;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    -webkit-box-shadow: inset 0px 0px 4px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 0px 0px 4px 0px rgba(66, 68, 90, 1);
+    box-shadow: inset 0px 0px 4px 0px rgba(66, 68, 90, 1);
+    padding-left:25px;
+    padding-right: 25px;
+}
+#foot {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+    position:fixed;
+  }
+  textarea{
+    width:500px;
+    height: 300px;
+  }
+  input{
+    margin-top:10px;
+  }
